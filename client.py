@@ -17,6 +17,8 @@ def create_issue():
 def read_issues():
     response = requests.get(f"{BASE_URL}/issues/")
     issues = response.json()
+    if len(issues) == 0:
+        print("No issues were found")
     for issue in issues:
         print(issue)
 
