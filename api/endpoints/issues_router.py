@@ -2,7 +2,8 @@ from typing import List
 from fastapi import APIRouter, HTTPException
 import orjson
 from datetime import datetime
-from models.issue import Issue, IssueIn
+
+from api.models.issue import Issue, IssueIn
 
 router = APIRouter()
 
